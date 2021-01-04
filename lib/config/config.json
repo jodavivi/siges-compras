@@ -1,0 +1,5 @@
+{
+    "seqCompra": "logistica.\"compra_Id_seq\"" ,
+    "seqCompraDetalle": "logistica.\"compra_detalle_Id_seq\"" ,
+    "seqCompraDocumento": "logistica.\"compra_documento_Id_seq\"" 
+}
