@@ -11,6 +11,8 @@
     "express-validator": "^6.6.0",
     "html-to-text": "^5.1.1",
     "juice": "^7.0.0",
+    "log4js": "^6.5.2",
+    "node-cache": "^5.1.2",
     "nodemailer": "^6.4.10",
     "pg": "^8.2.1",
     "pg-hstore": "^2.3.3",
@@ -26,8 +28,10 @@
     "nodemon": "^2.0.4"
   },
   "scripts": {
-    "start": "nodemon ./lib/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "set NODE_ENV=development&& nodemon ./lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set NODE_ENV=development&& nodemon ./lib/index.js",
+    "prod": "set NODE_ENV=production&& nodemon ./lib/index.js"
   },
   "repository": {
     "type": "git",
